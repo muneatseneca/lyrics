@@ -19,17 +19,14 @@ body {
 }
 
 .line {
-  position: absolute;
-  font-family: "Share Tech Mono", monospace;
-  font-size: 3rem;
-  padding: 10px 20px;
-  
+  opacity: 0;
+  pointer-events: none;
 }
 
-#line2,
-#line3,
-#line4 {
-  display: none;
+
+#line1 {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 #line3 .swap3.alt {
@@ -108,11 +105,10 @@ body {
   position: fixed;
   top: 0;
 
-  width: 200px;      /* 🔥 bigger container so rotation has room */
-  height: 200vh;
+  width: 120px;
+  height: 100vh;
 
-  overflow: visible; /* keep visible */
-
+  overflow: visible;
   pointer-events: none;
   z-index: 997;
 }
@@ -120,15 +116,15 @@ body {
 .chains-inner {
   position: absolute;
   top: 0;
-  left: 50%;
 
   width: 40px;
   height: 100%;
 
-  transform: translateX(-50%); /* center only */
+  left: 0;              /* 🔥 no centering math */
+  transform-origin: top left;
 
   background-image: url('../images/chain.png');
-  background-repeat: repeat-y;   /* 🔥 this is your infinite loop */
+  background-repeat: repeat-y;
   background-size: 100% auto;
 
   opacity: 0.6;

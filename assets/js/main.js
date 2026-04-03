@@ -69,30 +69,49 @@ function typeWriter(element, speed = 15) {
 // TRANSITION (FIXED BUTTON LOGIC)
 // ==========================
 function transition(current, next) {
-  gsap.to(current, {
-    opacity: 0,
-    y: -20,
-    duration: 0.3,
-    onComplete: () => {
-      current.style.display = "none";
-      next.style.display = "block";
 
-      gsap.fromTo(
-        next,
-        { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 0.3 }
-      );
-
-      typeWriter(next);
-
-      // ✅ BUTTON VISIBILITY (FIXED)
-      if (next === line4) {
-        restartBtn.style.display = "block";
-      } else {
-        restartBtn.style.display = "none";
-      }
+  // disable current interaction
+  gsap.set(
+    current,
+    {
+      pointerEvents: "none"
     }
-  });
+  );
+
+  // fade out current
+  gsap.to(
+    current,
+    {
+      opacity: 0,
+      y: -20,
+      duration: 0.3
+    }
+  );
+
+  if (next) {
+
+    // enable next interaction
+    gsap.set(
+      next,
+      {
+        pointerEvents: "auto"
+      }
+    );
+
+    // animate next in
+    gsap.fromTo(
+      next,
+      {
+        opacity: 0,
+        y: 20
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.3
+      }
+    );
+  }
 }
 
 
