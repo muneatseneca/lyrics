@@ -109,7 +109,7 @@ body {
   left: 0;
 
   width: 200px;  /* big enough to not clip when rotated */
-  height: 1000vh; /* VERY tall so it spans fully */
+  height: 400vh; /* VERY tall so it spans fully */
 
   background-image: url('../images/chain.png');
   background-repeat: no-repeat; /* 🔥 IMPORTANT: NO REPEAT */
