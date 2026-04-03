@@ -234,6 +234,11 @@ setupLine(
       duration: 0.3
     });
 
+      gsap.to(".chain", {
+      filter: "brightness(0)",
+      duration: 0.3
+    });
+
     // 🔥 HIDE while hovering
     restartBtn.style.display = "none";
   },
@@ -248,6 +253,11 @@ setupLine(
     gsap.to(line4, {
       color: "#ffffff",
       scale: 1,
+      duration: 0.3
+    });
+
+      gsap.to(".chain", {
+      filter: "brightness(1)",
       duration: 0.3
     });
 
