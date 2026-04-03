@@ -108,10 +108,10 @@ body {
   position: fixed;
   top: 0;
 
-  width: 30px;   /* 🔥 change this to scale */
+  width: 120px;      /* give it more space */
   height: 200vh;
 
-  overflow: hidden;
+  overflow: visible; /* 🔥 THIS IS THE FIX */
 
   pointer-events: none;
   z-index: 997;
