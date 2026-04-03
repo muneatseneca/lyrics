@@ -108,10 +108,10 @@ body {
   position: fixed;
   top: 0;
 
-  width: 120px;      /* give it more space */
+  width: 200px;      /* 🔥 bigger container so rotation has room */
   height: 200vh;
 
-  overflow: visible; /* 🔥 THIS IS THE FIX */
+  overflow: visible; /* keep visible */
 
   pointer-events: none;
   z-index: 997;
@@ -122,10 +122,10 @@ body {
   top: 0;
   left: 50%;
 
-  width: 100%;
+  width: 40px;              /* 🔥 actual chain width */
   height: 100%;
 
-  transform: translateX(-50%) rotate(-15deg); /* default tilt */
+  transform-origin: top center;
 
   background-image: url('../images/chain.png');
   background-repeat: repeat-y;
@@ -153,6 +153,14 @@ body {
   right: 10%;
 }
 
-.chain1 { left: 10%; transform: rotate(-15deg); }
-.chain2 { left: 50%; transform: translateX(-50%) rotate(8deg); }
-.chain3 { right: 10%; transform: rotate(18deg); }
+.chain1 .chains-inner {
+  transform: translateX(-50%) rotate(-15deg);
+}
+
+.chain2 .chains-inner {
+  transform: translateX(-50%) rotate(8deg);
+}
+
+.chain3 .chains-inner {
+  transform: translateX(-50%) rotate(18deg);
+}
