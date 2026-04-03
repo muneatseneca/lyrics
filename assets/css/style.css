@@ -113,7 +113,8 @@ body {
   background-image: url('../images/chain.png');
   background-repeat: repeat-y;
   background-size: 80px auto;
-  mix-blend-mode: difference;
+  filter: brightness(0);
+  mix-blend-mode: normal;
 
   opacity: 0.5;
   pointer-events: none;
