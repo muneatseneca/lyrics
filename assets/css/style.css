@@ -121,13 +121,13 @@ body {
 
 /* GOLD — \ direction */
 .chain1 {
-  left: -170px;
+  left: -120px;
   transform: rotate(-20deg);
 }
 
 /* BLUE — / direction (this is the crossing one) */
 .chain2 {
-  left: -140px;
+  left: -80px;
   transform: rotate(20deg);
 }
 
