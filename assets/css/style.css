@@ -123,16 +123,19 @@ body {
 .chain1 {
   left: -120px;
   transform: rotate(-20deg);
+  background-size: 100px auto;  
 }
 
 /* BLUE — / direction (this is the crossing one) */
 .chain2 {
   left: -80px;
   transform: rotate(20deg);
+  background-size: 80px auto;  
 }
 
 /* GREEN — same as gold, on right */
 .chain3 {
   left: calc(100% - 80px);
   transform: rotate(-20deg);
+  background-size: 120px auto;
 }

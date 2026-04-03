@@ -370,9 +370,23 @@ function textureFlicker() {
 
 textureFlicker();
 
-gsap.to(".chain", {
+gsap.to(".chain1", {
   backgroundPositionY: "+=300",
-  duration: 8,
+  duration: 14,   // slow
+  ease: "none",
+  repeat: -1
+});
+
+gsap.to(".chain2", {
+  backgroundPositionY: "+=300",
+  duration: 10,   // medium
+  ease: "none",
+  repeat: -1
+});
+
+gsap.to(".chain3", {
+  backgroundPositionY: "+=300",
+  duration: 6,    // fast
   ease: "none",
   repeat: -1
 });
