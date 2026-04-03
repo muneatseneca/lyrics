@@ -98,7 +98,7 @@ body {
   pointer-events: none;
 
   mix-blend-mode: multiply; /* 🔥 THIS is the blending */
-  opacity: 0.30;
+  opacity: 0.10;
 
   z-index: 999;
 }
