@@ -369,3 +369,10 @@ function textureFlicker() {
 }
 
 textureFlicker();
+
+gsap.to(".chains-inner", {
+  yPercent: -50,
+  duration: 20,
+  ease: "none",
+  repeat: -1
+});
