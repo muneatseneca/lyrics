@@ -117,32 +117,9 @@ body {
 }
 
 /* REPEATING CHAIN */
-/* CHAINS BASE (keep mostly same) */
-.chains {
-  position: fixed;
-  top: 0;
-
-  width: 60px;
-  height: 100vh; /* 🔥 IMPORTANT: NOT 1100vh */
-
-  overflow: hidden; /* 🔥 hides the looping */
-  pointer-events: none;
-  z-index: 1001;
-}
-
-/* INNER WRAPPER (moves) */
 .chains-inner {
   width: 100%;
-  height: 200%; /* 2 copies stacked */
-
-  display: flex;
-  flex-direction: column;
-}
-
-/* EACH COPY */
-.chain-bg {
-  width: 100%;
-  height: 100%;
+  height: 200%;
 
   background-image: url('../images/chain.png');
   background-repeat: repeat-y;
