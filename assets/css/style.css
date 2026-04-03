@@ -131,7 +131,7 @@ body {
 /* POSITION + TILT (wrapper only) */
 .chain1 {
   left: 5%;
-  transform: rotate(-60deg);
+  transform: rotate(-160deg);
 }
 
 .chain2 {
