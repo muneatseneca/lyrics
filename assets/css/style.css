@@ -103,3 +103,31 @@ body {
   z-index: 999;
 }
 
+.chain {
+  position: fixed;
+  top: 0;
+
+  width: 60px;
+  height: 100vh;
+
+  background-image: url('../images/chain.png');
+  background-repeat: repeat-y;
+  background-size: 60px auto;
+
+  opacity: 0.5;
+  z-index: 1000;
+}
+
+/* positions ONLY */
+.chain1 {
+  left: 10%;
+}
+
+.chain2 {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.chain3 {
+  right: 10%;
+}
