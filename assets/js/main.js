@@ -143,7 +143,7 @@ setupLine(
   () => gsap.to(line1, { y: -10, color: "#ff4444", duration: 0.3 }),
   () => gsap.to(line1, { y: 0, color: "#ffffff", duration: 0.3 }),
 
-  () => gsap.to(line1, { scaleY: 5, duration: 0.3 }),
+  () => gsap.to(line1, { scaleY: 10, duration: 0.3 }),
   () => gsap.to(line1, { scaleY: 1, duration: 0.2 })
 );
 
