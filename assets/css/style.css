@@ -104,20 +104,34 @@ body {
 }
 
 
-/* ===== FORCE CHAINS DEBUG ===== */
 .chains {
-  position: fixed !important;
-  top: 0 !important;
+  position: fixed;
+  top: 0;
 
-  width: 10px !important;   /* 🔥 THIS SHOULD BE TINY */
-  height: 100vh !important;
+  width: 30px;   /* 🔥 change this to scale */
+  height: 200vh;
 
-  background: lime !important;  /* 🔥 YOU MUST SEE THIS */
-  z-index: 9999 !important;
+  overflow: hidden;
+
+  pointer-events: none;
+  z-index: 997;
 }
 
 .chains-inner {
-  display: none !important;
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 100%;
+  height: 100%;
+
+  transform: translateX(-50%) rotate(-15deg); /* default tilt */
+
+  background-image: url('../images/chain.png');
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+
+  opacity: 0.6;
 }
 
 /* LEFT */
@@ -142,3 +156,20 @@ body {
 .chain1 { left: 10%; transform: rotate(-15deg); }
 .chain2 { left: 50%; transform: translateX(-50%) rotate(8deg); }
 .chain3 { right: 10%; transform: rotate(18deg); }
+
+
+/* ===== FORCE CHAINS DEBUG ===== */
+.chains {
+  position: fixed !important;
+  top: 0 !important;
+
+  width: 10px !important;   /* 🔥 THIS SHOULD BE TINY */
+  height: 100vh !important;
+
+  background: lime !important;  /* 🔥 YOU MUST SEE THIS */
+  z-index: 9999 !important;
+}
+
+.chains-inner {
+  display: none !important;
+}
