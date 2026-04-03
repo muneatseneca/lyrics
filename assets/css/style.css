@@ -110,7 +110,7 @@ body {
   top: 0;
 
   width: 60px;
-  height: 100vh;
+  height: 1100vh;
 
   pointer-events: none;
   z-index: 1001; /* low so it doesn't mess with text */
