@@ -113,7 +113,7 @@ body {
   overflow: hidden;
 
   pointer-events: none;
-  z-index: 997;
+  z-index: 1000;
 }
 
 .chains-inner {
