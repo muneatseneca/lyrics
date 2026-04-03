@@ -382,12 +382,19 @@ gsap.to(".chain2", {
   duration: 10,
   ease: "sine.inOut",  // 🔥 instead of "none"
   repeat: -1,
-  yoyo: true
 });
 
 gsap.to(".chain3", {
   backgroundPositionY: "+=300",
-  duration: 6,    // fast
+  duration: 16,
   ease: "none",
   repeat: -1
+});
+
+gsap.to(".chain3", {
+  x: "+=6",
+  duration: 3.5,
+  ease: "sine.inOut",
+  repeat: -1,
+  yoyo: true
 });
