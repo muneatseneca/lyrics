@@ -370,9 +370,9 @@ function textureFlicker() {
 
 textureFlicker();
 
-gsap.to(".chains", {
-  backgroundPositionY: "+=200px", // 🔥 SAME VALUE as background-size height
-  duration: 3,
+gsap.to(".chains-inner", {
+  yPercent: -50,
+  duration: 12,
   ease: "none",
   repeat: -1
 });
