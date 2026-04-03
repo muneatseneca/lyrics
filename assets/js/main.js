@@ -372,7 +372,7 @@ textureFlicker();
 
 gsap.to(".chains-inner", {
   yPercent: -50,
-  duration: 12,      // 🔥 faster = stronger pull
-  ease: "none",      // 🔥 constant force feeling
+  duration: 12,
+  ease: "none",
   repeat: -1
 });
