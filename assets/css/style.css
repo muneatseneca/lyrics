@@ -102,3 +102,36 @@ body {
 
   z-index: 999;
 }
+
+.chains {
+  position: fixed;
+  top: 0;
+
+  width: 60px;
+  height: 100vh;
+
+  pointer-events: none;
+  z-index: 1001;
+
+  background-image: url('../images/chain.png');
+  background-repeat: repeat-y;
+
+  background-size: 60px auto; /* 🔥 keeps proportions PERFECT */
+  opacity: 0.5;
+}
+
+/* positions */
+.chain1 {
+  left: 8%;
+  transform: rotate(-160deg);
+}
+
+.chain2 {
+  left: 50%;
+  transform: translateX(-50%) rotate(6deg);
+}
+
+.chain3 {
+  right: 8%;
+  transform: rotate(12deg);
+}

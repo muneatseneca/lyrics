@@ -370,9 +370,9 @@ function textureFlicker() {
 
 textureFlicker();
 
-gsap.to(".chains-inner", {
-  yPercent: -50,
-  duration: 12,
+gsap.to(".chains", {
+  backgroundPositionY: "+=500", // we'll tune this if needed
+  duration: 8,
   ease: "none",
   repeat: -1
 });
