@@ -119,7 +119,10 @@ body {
 .chains-inner {
   width: 100%;
   height: 100%;
-  opacity: 0.4;
+  background: red !important;
+  opacity: 1 !important;
+  z-index: 2000;
+  position: relative;
 
   background: url('../images/chain.png') repeat-y;
   background-size: contain;
