@@ -100,3 +100,18 @@ body {
   z-index: 999;
 }
 
+body {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh !important;
+  margin: 0 !important;
+}
+
+.line {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem !important;
+}
