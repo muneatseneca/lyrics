@@ -118,18 +118,20 @@ body {
   z-index: 1000;
 }
 
-/* positions ONLY */
+/* LEFT — downward diagonal */
 .chain1 {
-  left: -120px;
+  left: -200px;
   transform: rotate(-25deg);
 }
 
+/* LEFT — upward diagonal (crossing) */
 .chain2 {
-  left: 40%;
-  transform: rotate(-10deg);
+  left: -120px;
+  transform: rotate(25deg);
 }
 
+/* RIGHT — same direction as chain1 */
 .chain3 {
-  right: -120px;
-  transform: rotate(25deg);
+  left: calc(100% - 120px);
+  transform: rotate(-25deg);
 }
