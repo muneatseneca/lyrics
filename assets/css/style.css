@@ -101,47 +101,58 @@ body {
 }
 
 
+/* container = handles tilt */
 .chains {
   position: fixed;
   top: 0;
+  left: 10%;
 
-  width: 120px;
+  width: 80px;
   height: 100vh;
 
-  overflow: visible;
+  transform: rotate(-15deg);   /* ✅ tilt here ONLY */
+
   pointer-events: none;
   z-index: 997;
 }
 
+/* inner = handles repeat */
 .chains-inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 40px;
-  height: 100vh;
-
-  transform: translate(-50%, -50%) rotate(-15deg);
+  width: 100%;
+  height: 100%;
 
   background-image: url('../images/chain.png');
-  background-repeat: no-repeat;   /* 🔥 IMPORTANT */
-  background-size: contain;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
 
   opacity: 0.6;
 }
 
-.chain1 {
+/* container = handles tilt */
+.chains {
+  position: fixed;
+  top: 0;
   left: 10%;
+
+  width: 80px;
+  height: 100vh;
+
+  transform: rotate(-15deg);   /* ✅ tilt here ONLY */
+
+  pointer-events: none;
+  z-index: 997;
 }
 
-.chain2 {
-  left: 50%;
-  margin-left: -20px; /* 🔥 center WITHOUT translate */
-}
+/* inner = handles repeat */
+.chains-inner {
+  width: 100%;
+  height: 100%;
 
-.chain3 {
-  left: auto;
-  right: 10%;
+  background-image: url('../images/chain.png');
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+
+  opacity: 0.6;
 }
 
 .chain1 .chains-inner {
