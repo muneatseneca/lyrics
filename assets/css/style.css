@@ -102,39 +102,3 @@ body {
 
   z-index: 999;
 }
-
-
-/* CHAINS BASE */
-.chains {
-  position: fixed;
-  top: -100vh;
-
-  width: 60px;
-  height: 300vh;
-
-  pointer-events: none;
-  z-index: 1001;
-
-  background-image: url('../images/chain.png');
-  background-repeat: repeat-y;
-
-  /* 🔥 CRITICAL */
-  background-size: 100% 200px; /* adjust this number */
-}
-
-/* positions */
-.chain1 {
-  left: 5%;
-  transform: rotate(-160deg);
-}
-
-.chain2 {
-  left: 50%;
-  transform: translateX(-50%) rotate(6deg);
-}
-
-.chain3 {
-  right: 5%;
-  transform: rotate(12deg);
-}
-
