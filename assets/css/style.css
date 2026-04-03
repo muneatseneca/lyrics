@@ -130,8 +130,8 @@ body {
 
 /* POSITION + TILT (wrapper only) */
 .chain1 {
-  left: 10%;
-  transform: rotate(-10deg);
+  left: 5%;
+  transform: rotate(-60deg);
 }
 
 .chain2 {
