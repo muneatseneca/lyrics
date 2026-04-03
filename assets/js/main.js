@@ -370,13 +370,6 @@ function textureFlicker() {
 
 textureFlicker();
 
-gsap.to(".chains-inner", {
-  yPercent: -50,   // 🔥 NOT px, NOT y
-  duration: 20,
-  ease: "none",
-  repeat: -1
-});
-
 gsap.set(".chain2 .chains-inner", { y: "-20%" });
 gsap.set(".chain3 .chains-inner", { y: "-35%" });
 

@@ -123,12 +123,12 @@ body {
   left: 50%;
 
   width: 40px;
-  height: 200%; /* 🔥 double height */
+  height: 100%;
 
-  transform-origin: top center;
+  transform: translateX(-50%); /* center only */
 
   background-image: url('../images/chain.png');
-  background-repeat: repeat-y;
+  background-repeat: repeat-y;   /* 🔥 this is your infinite loop */
   background-size: 100% auto;
 
   opacity: 0.6;
