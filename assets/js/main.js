@@ -372,7 +372,7 @@ textureFlicker();
 
 gsap.to(".chains-inner", {
   yPercent: -50,
-  duration: 30,  // 🔥 was 12 → way too fast for tall chains
+  duration: 12,
   ease: "none",
   repeat: -1
 });
