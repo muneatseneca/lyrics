@@ -121,13 +121,15 @@ body {
 /* positions ONLY */
 .chain1 {
   left: 10%;
+  transform: rotate(-160deg);
 }
 
 .chain2 {
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) rotate(6deg);
 }
 
 .chain3 {
   right: 10%;
+  transform: rotate(12deg);
 }
