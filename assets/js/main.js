@@ -372,7 +372,7 @@ textureFlicker();
 
 gsap.to(".chains-inner", {
   y: "-50%",
-  duration: 18,
+  duration: 20,
   ease: "none",
   repeat: -1
 });
