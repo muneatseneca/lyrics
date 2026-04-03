@@ -81,7 +81,7 @@ body {
   pointer-events: none;
 
   mix-blend-mode: difference; /* 🔥 THIS is the blending */
-  opacity: 0.10;
+  opacity: 0.30;
 
   z-index: 998;
 }
