@@ -379,9 +379,10 @@ gsap.to(".chain1", {
 
 gsap.to(".chain2", {
   backgroundPositionY: "+=300",
-  duration: 10,   // medium
-  ease: "none",
-  repeat: -1
+  duration: 10,
+  ease: "sine.inOut",  // 🔥 instead of "none"
+  repeat: -1,
+  yoyo: true
 });
 
 gsap.to(".chain3", {
