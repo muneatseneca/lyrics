@@ -144,3 +144,15 @@ body {
   right: 10%;
   transform: rotate(12deg);
 }
+
+.chains {
+  position: fixed !important;
+  top: 0 !important;
+  left: 10% !important;
+
+  width: 50px !important;
+  height: 100vh !important;
+
+  background: red !important;   /* 🔥 SHOULD BE OBVIOUS */
+  z-index: 9999 !important;
+}
