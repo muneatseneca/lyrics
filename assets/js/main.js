@@ -243,6 +243,7 @@ setupLine(
 
       gsap.to(".chain", {
       filter: "brightness(0)",
+      opacity: 1,
       duration: 0.3
     });
 
