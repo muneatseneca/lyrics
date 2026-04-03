@@ -103,35 +103,3 @@ body {
   z-index: 999;
 }
 
-.chain {
-  position: fixed;
-  top: -150vh;   /* start WAY above screen */
-  left: 0;
-
-  width: 200px;  /* big enough to not clip when rotated */
-  height: 400vh; /* VERY tall so it spans fully */
-
-  background-image: url('../images/chain.png');
-  background-repeat: no-repeat; /* 🔥 IMPORTANT: NO REPEAT */
-  background-size: contain;
-
-  pointer-events: none;
-  z-index: 1001;
-  opacity: 0.5;
-}
-
-/* positions */
-.chain1 {
-  left: 8%;
-  transform: rotate(-160deg);
-}
-
-.chain2 {
-  left: 50%;
-  transform: translateX(-50%) rotate(6deg);
-}
-
-.chain3 {
-  right: 8%;
-  transform: rotate(12deg);
-}
