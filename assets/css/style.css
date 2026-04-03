@@ -105,33 +105,34 @@ body {
 
 .chain {
   position: fixed;
-  top: 0;
+  top: -100vh;
 
-  width: 60px;
-  height: 100vh;
+  width: 300px;
+  height: 300vh;
 
   background-image: url('../images/chain.png');
   background-repeat: repeat-y;
-  background-size: 60px auto;
+  background-size: 80px auto;
 
   opacity: 0.5;
+  pointer-events: none;
   z-index: 1000;
 }
 
-/* LEFT — downward diagonal */
+/* GOLD — \ direction */
 .chain1 {
-  left: -200px;
-  transform: rotate(-25deg);
+  left: -220px;
+  transform: rotate(-20deg);
 }
 
-/* LEFT — upward diagonal (crossing) */
+/* BLUE — / direction (this is the crossing one) */
 .chain2 {
-  left: -120px;
-  transform: rotate(25deg);
+  left: -140px;
+  transform: rotate(20deg);
 }
 
-/* RIGHT — same direction as chain1 */
+/* GREEN — same as gold, on right */
 .chain3 {
-  left: calc(100% - 120px);
-  transform: rotate(-25deg);
+  left: calc(100% - 80px);
+  transform: rotate(-20deg);
 }
