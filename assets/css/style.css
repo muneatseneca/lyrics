@@ -128,7 +128,7 @@ body {
 
 /* BLUE — / direction (this is the crossing one) */
 .chain2 {
-  left: -80px;
+  left: -40px;
   transform: rotate(20deg);
   background-size: 80px auto;  
 }
