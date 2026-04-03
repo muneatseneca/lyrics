@@ -371,7 +371,7 @@ function textureFlicker() {
 textureFlicker();
 
 gsap.to(".chains-inner", {
-  y: "-50%",
+  yPercent: -50,   // 🔥 NOT px, NOT y
   duration: 20,
   ease: "none",
   repeat: -1
