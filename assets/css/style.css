@@ -109,7 +109,7 @@ body {
   position: fixed;
   top: 0;
 
-  width: 160px;
+  width: 80px;   /* smaller = thinner chains */
   height: 200vh;
 
   overflow: hidden;
@@ -125,7 +125,7 @@ body {
 
   background-image: url('../images/chain.png');
   background-repeat: repeat-y;
-  background-size: contain;
+  background-size: 80px auto;
 
   opacity: 0.6;
   transform-origin: center;
