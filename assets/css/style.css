@@ -113,7 +113,7 @@ body {
   height: 100vh;
 
   pointer-events: none;
-  z-index: 1; /* low so it doesn't mess with text */
+  z-index: 1001; /* low so it doesn't mess with text */
 }
 
 /* REPEATING CHAIN */
@@ -145,14 +145,3 @@ body {
   transform: rotate(12deg);
 }
 
-.chains {
-  position: fixed !important;
-  top: 0 !important;
-  left: 10% !important;
-
-  width: 50px !important;
-  height: 100vh !important;
-
-  background: red !important;   /* 🔥 SHOULD BE OBVIOUS */
-  z-index: 9999 !important;
-}
