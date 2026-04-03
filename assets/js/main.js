@@ -370,8 +370,8 @@ function textureFlicker() {
 
 textureFlicker();
 
-gsap.to(".chains", {
-  backgroundPositionY: "+=500", // we'll tune this if needed
+gsap.to(".chain", {
+  backgroundPositionY: "+=300",
   duration: 8,
   ease: "none",
   repeat: -1
