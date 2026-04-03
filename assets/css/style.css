@@ -110,7 +110,7 @@ body {
   top: 0;
 
   width: 60px;
-  height: 1100vh;
+  height: 100vh;
 
   pointer-events: none;
   z-index: 1001; /* low so it doesn't mess with text */
@@ -131,7 +131,7 @@ body {
 /* POSITION + TILT (wrapper only) */
 .chain1 {
   left: 5%;
-  transform: rotate(-160deg);
+  transform: rotate(-60deg);
 }
 
 .chain2 {
