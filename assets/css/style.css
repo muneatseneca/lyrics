@@ -108,7 +108,7 @@ body {
   position: fixed;
   top: 0;
 
-  width: 80px;        /* 🔥 thinner */
+  width: 40px !important;  /* match the size */
   height: 200vh;
 
   overflow: hidden;
@@ -123,7 +123,8 @@ body {
 
   background-image: url('../images/chain.png');
   background-repeat: repeat-y;
-  background-size: 80px auto; /* 🔥 controls scale */
+
+  background-size: 40px auto !important; /* 🔥 FORCE SIZE */
 
   opacity: 0.6;
   transform-origin: center;
