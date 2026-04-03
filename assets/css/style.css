@@ -157,19 +157,3 @@ body {
 .chain2 { left: 50%; transform: translateX(-50%) rotate(8deg); }
 .chain3 { right: 10%; transform: rotate(18deg); }
 
-
-/* ===== FORCE CHAINS DEBUG ===== */
-.chains {
-  position: fixed !important;
-  top: 0 !important;
-
-  width: 10px !important;   /* 🔥 THIS SHOULD BE TINY */
-  height: 100vh !important;
-
-  background: lime !important;  /* 🔥 YOU MUST SEE THIS */
-  z-index: 9999 !important;
-}
-
-.chains-inner {
-  display: none !important;
-}
