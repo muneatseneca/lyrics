@@ -130,20 +130,15 @@ body {
   opacity: 0.6;
 }
 
-/* LEFT */
 .chain1 {
   left: 10%;
 }
 
-
-/* CENTER */
 .chain2 {
   left: 50%;
-  transform: translateX(-50%);
+  margin-left: -20px; /* 🔥 center WITHOUT translate */
 }
 
-
-/* RIGHT */
 .chain3 {
   left: auto;
   right: 10%;
