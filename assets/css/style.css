@@ -1,0 +1,103 @@
+.font1 { font-family: "Share Tech Mono", monospace; }
+.font2 { font-family: "UnifrakturCook", cursive; }
+.font3 { font-family: "Orbitron", sans-serif; }
+.font4 { font-family: "Creepster", cursive; }
+
+
+body {
+  background: #050505;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.line {
+  position: absolute;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 3rem;
+  padding: 10px 20px;
+  
+}
+
+#line2,
+#line3,
+#line4 {
+  display: none;
+}
+
+#line3 .swap3.alt {
+  font-family: "UnifrakturCook", cursive !important;
+  font-weight: 700 !important;
+}
+
+.swap3 {
+  display: inline-block;
+  min-width: 3ch; /* reserve space for "die" */
+  text-align: center;
+}
+
+#restartBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: transparent;
+  color: white;
+  border: 0px solid red;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: none;
+}
+
+#line3 {
+  font-size: 110px;
+}
+
+.letter {
+  display: inline-block;
+}
+
+.alive {
+  letter-spacing: -0.3em;
+}
+
+
+.texture {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: url('/assets/images/photo-wall-texture-pattern.jpg'); /* your texture */
+  background-size: cover;
+
+  pointer-events: none;
+
+  mix-blend-mode: difference; /* 🔥 THIS is the blending */
+  opacity: 0.10;
+
+  z-index: 998;
+}
+.texture2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: url('/assets/images/AdobeStock_292351373.jpeg'); /* your texture */
+  background-size: cover;
+
+  pointer-events: none;
+
+  mix-blend-mode: multiply; /* 🔥 THIS is the blending */
+  opacity: 0.30;
+
+  z-index: 999;
+}
