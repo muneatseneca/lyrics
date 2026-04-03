@@ -130,11 +130,12 @@ body {
 
 .chain2 {
   left: 50%;
-  transform: translateX(-50%) rotate(6deg);
+  margin-left: -30px;
+  transform: rotate(6deg);
 }
 
 .chain3 {
-  right: 5%;
+  right: 10%;
   transform: rotate(12deg);
 }
 
