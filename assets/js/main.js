@@ -1,3 +1,9 @@
+gsap.set(".chain", {
+  filter: "brightness(1)"
+});
+
+
+
 // ==========================
 // SELECT ELEMENTS
 // ==========================
@@ -187,6 +193,7 @@ setupLine(
   () => {
     gsap.to(line3, { opacity: 1, duration: 0.3 });
   },
+  
 
   // HOLD
   () => {
